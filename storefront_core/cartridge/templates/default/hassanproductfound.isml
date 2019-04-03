@@ -1,0 +1,42 @@
+<!--- TEMPLATENAME: productfound.isml --->
+	${pdict.product.name} has been found
+<iscomment> 
+	<br>
+	// request scope:
+	<br> 
+		<isset name="hassan" value="requestScope" scope="request"/>
+		${request.custom.hassan} <br>
+		${pdict.CurrentRequest.custom.hassan}	
+	<br>
+	//pdict scope:
+		<isset name = "hassanpdict" value = "pdictScope" scope = "pdict"/>	
+	<br>
+		${pdict.hassanpdict}
+	<br>
+	//page scope:
+		<isset name = "hassanpage" value = "PageScope" scope = "page"/>
+	<br>
+		${page.custom.hassanpage} does	not	work
+	<br>
+		${hassanpage} works
+	<br>
+	<isinclude template="/product/producttile" > 
+</iscomment>
+<isdecorate template="product/pt_productdetails">
+	<h3> Product TILES </h3>
+	<h3> Last Visited </h3>
+	 <isinclude url="${URLUtils.url('Product-IncludeLastVisited')}" />
+		<h1> If work </h1>
+	<h3>With if</h3>
+		<isinclude template="util/modules"/>
+		<isbreadcrumbs bctext1="1" bcurl1="123"/>
+		
+		<isif condition="${pdict.myProduct.online}">
+			Product is online
+		<iselse>
+			Product is offline
+		</isif>
+		
+		<isproducttile product="${pdict.product}" showswatches="${true}" showpricing="${true}" />
+</isdecorate>
+	

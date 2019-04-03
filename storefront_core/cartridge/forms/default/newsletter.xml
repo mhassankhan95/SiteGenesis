@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<form>
+	
+	<field max-length="50" binding="custom.firstName" mandatory="true" type="string" label="contactus.firstname.label" formid="fname"/>
+	
+	<field max-length="50" binding="custom.lastName" mandatory="true" type="string" label="contactus.lastname.label" formid="lname"/>
+	
+	<field max-length="50" binding="custom.email" mandatory="true" type="string" label="contactus.email.label" formid="email" value-error="contactus.email.value-error" parse-error="contactus.email.parse-error" regexp="^[\w-\.]{1,}\@([\da-zA-Z-]{1,}\.){1,}[\da-zA-Z-]{2,6}$"/>
+	
+	<action formid="subscribe" valid-form="true"/>
+
+</form>

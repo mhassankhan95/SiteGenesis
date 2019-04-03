@@ -1,0 +1,7 @@
+<iscontent type="text/html" charset="UTF-8" compact="true"/>
+<iscomment>
+
+
+<link href="${URLUtils.staticURL('/css/verticalcarousel.css')}" type="text/css" rel="stylesheet"/> 
+
+</iscomment>

@@ -1,0 +1,16 @@
+<!--- TEMPLATENAME: helloworld1.isml --->
+<iscomment>
+	${pdict.hassanParameteronISML}
+	<br>
+	Showing Include
+	<isredirect location="${URLUtils.https('Account-Show')}" permanent="true"/>
+<iscache type="relative" minute="30" />
+<isprint value="${new Date()}" style="DATE_TIME" />
+	<isinclude template="/product/producttile" > 
+</iscomment>
+
+
+ehy
+
+${pdict.CurrentHttpParameterMap.pid.stringValue} asdasd
+${pdict.Product.name} asdasd

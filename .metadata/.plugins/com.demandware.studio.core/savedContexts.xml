@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<searchContexts>
+<context Description="Sites-Training15871-Site (debugged Site)">
+<elements>
+<element creator-version="3" element-handle-id="AUNhcnRyaWRnZQJpbnRfYWR5ZW5fY29udHJvbGxlcnM=" factoryID="com.demandware.studio.core.common.beehiveElementFactory"/>
+<element creator-version="3" element-handle-id="AUNhcnRyaWRnZQJpbnRfYWR5ZW5fb3ZlcmxheQ==" factoryID="com.demandware.studio.core.common.beehiveElementFactory"/>
+<element creator-version="3" element-handle-id="AUNhcnRyaWRnZQJzdG9yZWZyb250X2NvcmU=" factoryID="com.demandware.studio.core.common.beehiveElementFactory"/>
+<element creator-version="3" element-handle-id="AUNhcnRyaWRnZQJzdG9yZWZyb250X2NvbnRyb2xsZXJz" factoryID="com.demandware.studio.core.common.beehiveElementFactory"/>
+<element creator-version="3" element-handle-id="AUNhcnRyaWRnZQJzdG9yZWZyb250X3BpcGVsaW5lcw==" factoryID="com.demandware.studio.core.common.beehiveElementFactory"/>
+</elements>
+</context>
+</searchContexts>

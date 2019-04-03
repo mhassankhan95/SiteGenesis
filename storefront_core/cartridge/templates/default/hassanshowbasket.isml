@@ -1,0 +1,22 @@
+<!--- TEMPLATENAME: hassanshowbasket.isml --->
+<iscomment>
+	<br/>
+	<isloop items="${pdict.Basket.allProductLineItems}" var="productLineItem">
+		Name: ${productLineItem.product.name} <br/>
+	</isloop>
+	
+	<br>
+	
+	${dw.customer.CustomerMgr.registeredCustomerCount} kok
+	 
+	<isscript>
+		var count= dw.customer.CustomerMgr.registeredCustomerCount;
+	</isscript>
+	${count} listed
+	<form  action="${URLUtils.continueURL()}" method="post">
+		<isinputfield formfield="${pdict.CurrentForms.newsletter.fname}" type="input">
+		<input type="submit" value="${Resource.msg('global.submit','locale',null)}" name="${pdict.CurrentForms.newsletter.subscribe.htmlName}"/>
+	</form>
+</iscomment>
+
+Helloooooo

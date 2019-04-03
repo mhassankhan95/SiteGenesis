@@ -1,0 +1,4 @@
+<!--- TEMPLATENAME: newslettersuccess.isml --->
+
+<p>Thank you ${pdict.CurrentForms.newsletter.fname.value}</p>
+Back to <a href="${URLUtils.url('HassanNewsletter-Start')}">Newsletter Subscription</a>.

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>int_adyen_overlay</name>
+	<comment></comment>
+	<projects>
+		<project>DigitalServer</project>
+		<project>int_adyen_pipelines</project>
+		<project>storefront_controllers</project>
+		<project>storefront_core</project>
+		<project>storefront_pipelines</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.demandware.studio.core.beehiveElementBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.demandware.studio.core.beehiveNature</nature>
+	</natures>
+</projectDescription>

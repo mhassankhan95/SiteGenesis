@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1554192593099_1" label="adyenWorkspace" name="adyenWorkspace">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DigitalServer" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/int_adyen_overlay" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/int_adyen_pipelines" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/storefront_controllers" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/storefront_core" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/storefront_pipelines" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1554130748540_0" label="Window Working Set" name="Aggregate for window 1554130748539"/>
+<mruList name="adyenWorkspace"/>
+</workingSetManager>
