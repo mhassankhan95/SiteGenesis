@@ -9,8 +9,7 @@
 		holder:pdict.SelectedCreditCard.creditCardHolder,
 		type:pdict.SelectedCreditCard.creditCardType,
 		expirationMonth:pdict.SelectedCreditCard.creditCardExpirationMonth,
-		expirationYear:pdict.SelectedCreditCard.creditCardExpirationYear,
-		selectedCardID:pdict.SelectedCreditCard.UUID		
+		expirationYear:pdict.SelectedCreditCard.creditCardExpirationYear,		
 	}
 	var json = JSON.stringify(cc);	
 </isscript>

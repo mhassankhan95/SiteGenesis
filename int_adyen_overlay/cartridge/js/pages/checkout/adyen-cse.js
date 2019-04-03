@@ -18,7 +18,6 @@ function pad ( number ) {
 function initializeBillingEvents() {
 
 	$('#billing-submit').on('click', function (e) {
-		alert('hllo');
 		var radioVal = $('.payment-method-options').find(':checked').val();
 		if ('CREDIT_CARD' == radioVal){
 			e.preventDefault();

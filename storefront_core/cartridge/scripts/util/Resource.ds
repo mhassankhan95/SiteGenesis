@@ -7,8 +7,6 @@ var Site = require('dw/system/Site');
 var ContentMgr = require('dw/content/ContentMgr');
 var ProductAvailabilityModel = require('dw/catalog/ProductAvailabilityModel');
 
-var AdyenHelper = require ("int_adyen_overlay/cartridge/scripts/util/AdyenHelper");
-
 function ResourceHelper() {}
 /**
  * Get the client-side constants
@@ -127,7 +125,6 @@ ResourceHelper.getResources = function(pageContext) {
         VALIDATE_RANGE                    : Resource.msg('validate.range', 'forms', null),
         VALIDATE_MAX                      : Resource.msg('validate.max', 'forms', null),
         VALIDATE_MIN                      : Resource.msg('validate.min', 'forms', null),
-        ADYEN_CC_VALIDATE 				  : Resource.msg('adyen.creditcard', 'adyen', null)
     };
 
     // additional resources
@@ -224,7 +221,6 @@ ResourceHelper.getPreferences = function(pageContext) {
         COOKIE_HINT: (cookieHintAsset && cookieHintAsset.online) || false,
         CONSENT_TRACKING_HINT: (consentTrackingHintAsset && consentTrackingHintAsset.online) || false,
         CHECK_TLS: Site.getCurrent().getCustomPreferenceValue('checkTLS'),
-        ADYEN_CSE_ENABLED : AdyenHelper.getAdyenCseEnabled(),
     };
 }
 /**

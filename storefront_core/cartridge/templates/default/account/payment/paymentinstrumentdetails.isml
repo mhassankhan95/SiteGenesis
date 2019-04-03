@@ -23,13 +23,7 @@
 					size: 17
 				};
 			</isscript>
-			
-			<isset name="AdyenHelper" value="${require('int_adyen_overlay/cartridge/scripts/util/AdyenHelper')}" scope="pdict" />
-			<isset name="AdyenCseEnabled" value="${pdict.AdyenHelper.getAdyenCseEnabled()}" scope="page" />
-			<isif condition="${AdyenCseEnabled}">
-				<isinclude template="account/payment/adyenpaymentinstrumentdetails"/>
-				<iselse/>
-				
+
 				<isinputfield formfield="${pdict.CurrentForms.paymentinstruments.creditcards.newcreditcard.owner}" type="input" attributes="${ownerAttributes}" />
 				<isinputfield formfield="${pdict.CurrentForms.paymentinstruments.creditcards.newcreditcard.type}" type="select"/>
 				<isinputfield formfield="${pdict.CurrentForms.paymentinstruments.creditcards.newcreditcard.number}" dynamicname="true" type="input" attributes="${numberAttributes}"/>
@@ -51,7 +45,6 @@
 						${Resource.msg('global.cancel', 'locale', null)}
 					</button>
 				</div>
-			</isif>
 			<input type="hidden" name="${dw.web.CSRFProtection.getTokenName()}" value="${dw.web.CSRFProtection.generateToken()}"/>
 		</fieldset>
 	</form>

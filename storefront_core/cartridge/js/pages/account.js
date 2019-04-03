@@ -7,7 +7,7 @@ var giftcert = require('../giftcert'),
     page = require('../page'),
     login = require('../login'),
     validator = require('../validator');
-	adyenCse = require('../adyen-cse');
+
 /**
  * @function
  * @description Initializes the events on the address form (apply, cancel, delete)
@@ -177,9 +177,6 @@ function initPaymentEvents() {
 
 function initializePaymentForm() {
     $('#CreditCardForm').on('click', '.cancel-button', function (e) {
-	   if (SitePreferences.ADYEN_CSE_ENABLED)  {                 
-		  adyenCse.initAccount();
-		}
     	e.preventDefault();
         dialog.close();
     });

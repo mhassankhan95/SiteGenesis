@@ -224,22 +224,6 @@
 					</div>
 			        <input type="hidden" name="${dw.web.CSRFProtection.getTokenName()}" value="${dw.web.CSRFProtection.generateToken()}"/>
 					
-					<iscomment>
-						Set the brandcode and issuerId in session for when user hits the back button on Adyen hpp
-					</iscomment>
-					
-					<isif condition="${!empty(pdict.CurrentHttpParameterMap.brandCode.value) || !empty(session.custom.brandCode)}">
-					   <isset name="brandCode" value="${!empty(pdict.CurrentHttpParameterMap.brandCode.value) ? pdict.CurrentHttpParameterMap.brandCode.value :    session.custom.brandCode}" scope="page"/>
-					   <input type="hidden" name="brandCode" value="${brandCode}" />
-					   <isif condition="${!empty(pdict.CurrentHttpParameterMap.issuerId.value) || !empty(session.custom.issuerId)}">
-					      <isset name="issuerId" value="${!empty(pdict.CurrentHttpParameterMap.issuerId.value) ? pdict.CurrentHttpParameterMap.issuerId.value :      session.custom.issuerId}" scope="session"/>
-					      <input type="hidden" name="issuerId" value="${session.custom.issuerId}" />
-					   </isif>
-					   <isset name="brandCode" value="${!empty(pdict.CurrentHttpParameterMap.brandCode.value) ? pdict.CurrentHttpParameterMap.brandCode.value : session.custom.brandCode}" scope="session"/>
-					   <isset name="dob" value="${!empty(pdict.CurrentHttpParameterMap.dob.value) ? pdict.CurrentHttpParameterMap.dob.value : ''}" scope="session"/>
-					   <isset name="gender" value="${!empty(pdict.CurrentHttpParameterMap.gender.value) ? pdict.CurrentHttpParameterMap.dob.value : ''}" scope="session"/>
-					</isif>
-					
 				</fieldset>
 			</form>
 
